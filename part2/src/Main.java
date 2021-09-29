@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -5,8 +7,10 @@ public class Main {
         // Объявляете переменные для входных данных и
         // параметров программы: начального счёта,
         // суммы пополнения и тп
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите сумму пополнения баланса: ");
         int amount = 100;
-        int transaction = 1100;
+        int transaction = in.nextInt();
         int finalCount;
         int bonus;
 
